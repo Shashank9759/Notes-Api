@@ -41,8 +41,8 @@ Welcome to the Notes API! This project is a RESTful API built using Node.js, Exp
 
     ```env
     PORT=3000
-    MONGODB_URI=your_mongodb_uri
-    JWT_SECRET=your_jwt_secret
+    MONGODB_URI=mongodb+srv://shashank9759:shashank@cluster0.yz4pbq0.mongodb.net/notes_db?retryWrites=true&w=majority&appName=AtlasApp
+    JWT_SECRET=abc123
     ```
 
 5. **Run the server**:
@@ -57,16 +57,16 @@ Welcome to the Notes API! This project is a RESTful API built using Node.js, Exp
 
 ### Authentication
 
-- **Register**: `POST /api/auth/register`
-- **Login**: `POST /api/auth/login`
+- **Register**: `POST /user/signup`
+- **Login**: `POST /user/signin`
 
 ### Notes
 
-- **Get All Notes**: `GET /api/notes`
-- **Create Note**: `POST /api/notes`
-- **Get Note by ID**: `GET /api/notes/:id`
-- **Update Note**: `PUT /api/notes/:id`
-- **Delete Note**: `DELETE /api/notes/:id`
+- **Get All Notes**: `GET /notes`
+- **Create Note**: `POST /notes`
+- **Get Note by ID**: `GET /notes/:id`
+- **Update Note**: `PUT /notes/:id`
+- **Delete Note**: `DELETE /notes/:id`
 
 ## Contributing
 
@@ -78,7 +78,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For any questions or feedback, please contact me at [your_email@example.com].
+For any questions or feedback, please contact me at [shashankranjantech@gmail.com].
 
 ---
 
